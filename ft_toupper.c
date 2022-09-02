@@ -1,21 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: afelipe- <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: coder <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/01 22:27:32 by afelipe-          #+#    #+#             */
-/*   Updated: 2022/09/01 22:28:18 by coder            ###   ########.fr       */
+/*   Created: 2022/09/02 08:43:12 by coder             #+#    #+#             */
+/*   Updated: 2022/09/02 08:50:25 by coder            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
-
-int	ft_isalph(int arg);
-int	ft_isalnum(int arg);
-int	ft_isascii(int arg);
-int	ft_isdigit(int arg);
-
-#endif // LIBFT_H
+int	ft_toupper(int args)
+{
+	if (args >= 'a' && args <= 'z')
+		return (args - 32);
+	return (args);
+}

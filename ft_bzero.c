@@ -1,21 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: afelipe- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/01 22:27:32 by afelipe-          #+#    #+#             */
-/*   Updated: 2022/09/01 22:28:18 by coder            ###   ########.fr       */
+/*   Created: 2022/09/02 08:48:53 by afelipe-          #+#    #+#             */
+/*   Updated: 2022/09/02 08:49:47 by coder            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+void	ft_bzero(void *s, size_t n)
+{
+	size_t	i;
 
-int	ft_isalph(int arg);
-int	ft_isalnum(int arg);
-int	ft_isascii(int arg);
-int	ft_isdigit(int arg);
-
-#endif // LIBFT_H
+	i = 0;
+	while (n--)
+	{
+		((unsigned char *)s)[i] = 0;
+		i++;
+	}
+}

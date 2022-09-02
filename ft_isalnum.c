@@ -1,21 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: afelipe- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/01 22:27:32 by afelipe-          #+#    #+#             */
-/*   Updated: 2022/09/01 22:28:18 by coder            ###   ########.fr       */
+/*   Created: 2022/09/01 17:25:50 by afelipe-          #+#    #+#             */
+/*   Updated: 2022/09/01 17:26:28 by coder            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
-
-int	ft_isalph(int arg);
-int	ft_isalnum(int arg);
-int	ft_isascii(int arg);
-int	ft_isdigit(int arg);
-
-#endif // LIBFT_H
+int	ft_isalnum(int arg)
+{
+	if ((arg >= 48 && arg <= 57)
+		|| (arg >= 'a' && arg <= 'z') || (arg >= 'A' && arg <= 'Z'))
+		return (1);
+	return (0);
+}
