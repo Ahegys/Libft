@@ -1,35 +1,25 @@
-#	VARIABLES
 NAME = libft.a
-
-SOURCES = ft_isascii.c ft_isalnum.c ft_isdigit.c ft_isalpha.c
-
-OBJC = ${SRCS:%.c=%.o}
-
 FLAGS = -Wall -Wextra -Werror
-# 	COLORS
-RED = \e[00;32m
+REMOVE = rm -rf
 
-FX = \e[00m
+LIB_PATH = ./
+SRCS = *.c
+OBJS = $(SRCS:.c=.o)
 
-PURPLE =\e[00;35m
+all: $(NAME)
+$(NAME): $(OBJS)
+	ar rc $(NAME) $(OBJS)
 
-GREEN = \e[00;31m
+$(OBJS):
+	gcc $(FLAGS) -I $(LIB_PATH) -c $(SRCS)
 
 
-all:	${NAME}
-
-${NAME}:	${OBJS}
-	
-${OBJS}:
-	${CC} ${CFLGS} -o $@ -c $<
-
-out:	${OBJS}
-
-fclean:
-	rm -rf *.o *.a
 clean:
-	rm -rf *.o
+	$(REMOVE) *.o
 
-re:
+fclean: clean
+		$(REMOVE) $(NAME)
 
+re: fclean all
 
+.PHONY: re fclean clean all
