@@ -1,7 +1,0 @@
-*.out
-*.gitignore
-*.o
-venv
-*.git
-*.DS_Store
-tester
