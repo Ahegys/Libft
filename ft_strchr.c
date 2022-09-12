@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: afelipe- <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: afelipe- <afelipe-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/02 08:56:38 by afelipe-          #+#    #+#             */
-/*   Updated: 2022/09/05 14:23:51 by coder            ###   ########.fr       */
+/*   Created: 2022/09/12 13:55:35 by afelipe-          #+#    #+#             */
+/*   Updated: 2022/09/12 13:55:38 by afelipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 char	*ft_strchr(const char *args, int nbr)

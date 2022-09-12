@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: coder <marvin@42.fr>                       +#+  +:+       +#+        */
+/*   By: afelipe- <afelipe-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/06 05:08:24 by coder             #+#    #+#             */
-/*   Updated: 2022/09/06 05:12:24 by coder            ###   ########.fr       */
+/*   Created: 2022/09/12 13:56:06 by afelipe-          #+#    #+#             */
+/*   Updated: 2022/09/12 14:36:32 by afelipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,24 +14,20 @@
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	unsigned char	*u_dest;
-	unsigned char	*u_src;
-	size_t			i;
-
-	if (!dest || !src)
-		return (NULL);
-	u_dest = (unsigned char *)dest;
-	u_src = (unsigned char *)src;
-	if (dest < src)
+	char	*str1;
+	char	*str2;
+	
+	str1 = (char *) src;
+	str2 = (char *) dest;
+	if (src < dest && (src + n) > dest)
 	{
-		i = 0;
-		while (i < n)
+		while (n > 0)
 		{
-			u_dest[i] = u_src[i];
-			i++;
+			str2[n - 1] = str1[n - 1];
+			n--;
 		}
 	}
 	else
-		ft_memcpy(dest, src, n);
-	return (u_dest);
+		ft_memcpy(str2, str1, n);
+	return (dest);
 }

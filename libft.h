@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: afelipe- <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: afelipe- <afelipe-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/01 22:27:32 by afelipe-          #+#    #+#             */
-/*   Updated: 2022/09/06 05:20:33 by coder            ###   ########.fr       */
+/*   Created: 2022/09/12 13:52:38 by afelipe-          #+#    #+#             */
+/*   Updated: 2022/09/12 19:14:31 by afelipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int		ft_isalpha(int c);
 int		ft_isalnum(int arg);
 int		ft_isascii(int arg);
 int		ft_isdigit(int arg);
-int		ft_tolower(int argsu);
+int		ft_tolower(int c);
 int		ft_toupper(int args);
 int		ft_isprint(int args);
 char	*ft_strchr(const char *args, int nbr);
@@ -43,12 +43,12 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 char	*ft_strjoin(char const *s1, char const *s2);
 void	ft_putstr_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
-void	ft_putendl_fd(char *s, int fd)
+void	ft_putendl_fd(char *s, int fd);
 void	ft_putchar_fd(char c, int fd);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	**ft_split(char const *s, char c);
-int     ft_atoi(const char *nptr);
-char    *ft_strdup(const char *s);
+int		ft_atoi(const char *nptr);
+char	*ft_strdup(const char *s);
 char	*ft_strrchr(const char *s, int c);
-int	ft_memcmp(const void *s1, const void *s2, size_t n);
+int		ft_memcmp(const void *s1, const void *s2, size_t n);
 #endif // LIBFT_H

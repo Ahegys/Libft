@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: coder <marvin@42.fr>                       +#+  +:+       +#+        */
+/*   By: afelipe- <afelipe-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/02 08:46:08 by coder             #+#    #+#             */
-/*   Updated: 2022/09/02 08:46:10 by coder            ###   ########.fr       */
+/*   Created: 2022/09/12 13:54:04 by afelipe-          #+#    #+#             */
+/*   Updated: 2022/09/12 19:12:24 by afelipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_tolower(int args)
+#include "libft.h"
+
+int	ft_tolower(int c)
 {
-	if (args >= 'A' && args <= 'Z')
-		return (args - 32);
-	return (args);
+	return (c | (ft_isalpha(c) >> 5));
 }

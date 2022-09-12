@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: afelipe- <marvin@42.fr>                       +#+  +:+       +#+     */
+/*   By: afelipe- <afelipe-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/01 17:40:54 by afelipe-          #+#    #+#             */
-/*   Updated: 2022/09/01 22:20:17 by coder            ###   ########.fr       */
+/*   Created: 2022/09/12 13:56:59 by afelipe-          #+#    #+#             */
+/*   Updated: 2022/09/12 19:07:59 by afelipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_isascii(int arg)
 {
-	if (arg >= 1 && arg <= 255)
-		return (arg);
+	if (arg >= 0 && arg <= 127)
+		return (1);
 	return (0);
 }
