@@ -6,13 +6,18 @@
 /*   By: afelipe- <afelipe-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/12 13:54:04 by afelipe-          #+#    #+#             */
-/*   Updated: 2022/09/12 19:12:24 by afelipe-         ###   ########.fr       */
+/*   Updated: 2022/09/12 15:13:28 by afelipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_tolower(int c)
+int	ft_tolower(int ch)
 {
-	return (c | (ft_isalpha(c) >> 5));
+	if (ch >= 65 && ch <= 90)
+	{
+		ch = ch + 32;
+		return (ch);
+	}
+	return (ch);
 }

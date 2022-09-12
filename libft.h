@@ -6,7 +6,7 @@
 /*   By: afelipe- <afelipe-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/12 13:52:38 by afelipe-          #+#    #+#             */
-/*   Updated: 2022/09/12 19:14:31 by afelipe-         ###   ########.fr       */
+/*   Updated: 2022/09/12 15:35:12 by afelipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int		ft_isalpha(int c);
 int		ft_isalnum(int arg);
 int		ft_isascii(int arg);
 int		ft_isdigit(int arg);
-int		ft_tolower(int c);
+int		ft_tolower(int ch);
 int		ft_toupper(int args);
 int		ft_isprint(int args);
 char	*ft_strchr(const char *args, int nbr);

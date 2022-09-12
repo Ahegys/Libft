@@ -6,7 +6,7 @@
 /*   By: afelipe- <afelipe-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/12 13:56:06 by afelipe-          #+#    #+#             */
-/*   Updated: 2022/09/12 14:36:32 by afelipe-         ###   ########.fr       */
+/*   Updated: 2022/09/12 16:23:27 by afelipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	char	*str1;
 	char	*str2;
-	
+
 	str1 = (char *) src;
 	str2 = (char *) dest;
 	if (src < dest && (src + n) > dest)

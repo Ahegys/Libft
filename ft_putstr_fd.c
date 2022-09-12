@@ -6,7 +6,7 @@
 /*   By: afelipe- <afelipe-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/12 13:55:44 by afelipe-          #+#    #+#             */
-/*   Updated: 2022/09/12 15:46:53 by afelipe-         ###   ########.fr       */
+/*   Updated: 2022/09/12 16:24:52 by afelipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 void	ft_putstr_fd(char *s, int fd)
 {
-	int	i;
+	int		i;
 	char	c;
-	
+
 	i = 0;
 	while (s[i] != '\0')
 	{
