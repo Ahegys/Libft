@@ -6,7 +6,7 @@
 /*   By: afelipe- <afelipe-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/12 13:55:40 by afelipe-          #+#    #+#             */
-/*   Updated: 2022/09/12 13:55:41 by afelipe-         ###   ########.fr       */
+/*   Updated: 2022/09/13 07:58:40 by afelipe-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,11 +47,15 @@ char	**ft_split(char const *s, char c)
 	i = 0;
 	count = 0;
 	if (!s)
-		return (NULL);
+	{
+		list = malloc(sizeof(char *) * (1));
+		list[0] = NULL;
+		return (list);
+	}
 	while (s[i])
 	{
 		if (s[i] == c && i != 0 && s[i - 1] != c)
-			count++;
+		count++;
 		i++;
 	}
 	if (i != 0 && s[i - 1] != c && ft_strlen(s) > 0)
